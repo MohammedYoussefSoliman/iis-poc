@@ -13,13 +13,37 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "lint": {
+          "validProperties": ["label", "text-wrap"]
+        }
+      }
+    ],
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@locales": ["./src/locales"],
+      "@locales/*": ["./src/locales/*"],
+      "@assets": ["./src/assets"],
+      "@assets/*": ["./src/assets/*"],
+      "@state": ["./src/state"],
+      "@provider": ["src/provider"],
+      "@modules/*": ["src/modules/*"],
+      "@modules": ["src/modules"],
+      "@theme": ["./src/styles/theme"],
+      "@theme/*": ["./src/styles/theme/*"],
+      "@hooks": ["./src/hooks"],
+      "@styles/*": ["./src/styles/*"],
+      "@styles": ["./src/styles"],
+      "@layouts": ["./src/layouts"]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "emotion.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
