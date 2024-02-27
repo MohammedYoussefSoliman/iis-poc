@@ -1,4 +1,7 @@
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
+
+import { Flex } from "@components";
 
 export const Wrapper = styled.div`
   label: layout-wrapper;
@@ -18,3 +21,11 @@ export const Wrapper = styled.div`
     overflow: hidden;
   }
 `;
+
+export const Aside = styled(Flex)(
+  ({ theme: { colors } }) => css`
+    label: aside-wrapper;
+    background-color: ${colors.shades[100]};
+    width: 240px;
+  `
+);

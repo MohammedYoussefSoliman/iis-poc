@@ -1,7 +1,7 @@
 import { Global, css, useTheme } from "@emotion/react";
 
 export default function GlobalStyles() {
-  const { font } = useTheme();
+  const { font, colors } = useTheme();
 
   return (
     <Global
@@ -51,6 +51,7 @@ export default function GlobalStyles() {
           font-family: ${font};
           width: 100%;
           white-space: normal;
+          background-color: ${colors.shades[200]};
         }
       `}
     />

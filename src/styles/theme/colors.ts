@@ -80,7 +80,7 @@ export const error = {
 
 export const shades = {
   100: "#ffffff",
-  200: "#f7f7f7",
+  200: "#F9FBFF",
   300: "#f5f5f5",
   400: "#f1f1f1",
   500: "#dddddd",
@@ -88,7 +88,7 @@ export const shades = {
 
 export const text = {
   heading: dark[900],
-  body: dark[700],
+  body: dark[600],
   error: error[300],
   success: green[500],
   warning: orange[700],

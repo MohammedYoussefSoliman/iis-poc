@@ -1,17 +1,22 @@
 import { Outlet } from "react-router-dom";
 
-import Header from "./header";
-import Footer from "./footer";
+import { Flex } from "@components";
 
-import { Wrapper } from "./layouts.styles";
+import Header from "./header";
+
+import { Wrapper, Aside } from "./layouts.styles";
 
 export default function NormalLayout() {
   return (
     <Wrapper>
       <main>
         <Header />
-        <Outlet />
-        <Footer />
+        <Flex fullWidth flex={1}>
+          <Aside direction="column" pv={32} ph={16} fullHeight>
+            aside
+          </Aside>
+          <Outlet />
+        </Flex>
       </main>
     </Wrapper>
   );
