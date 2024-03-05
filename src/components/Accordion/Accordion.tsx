@@ -17,11 +17,12 @@ export default function Accordion({
   trigger,
   value,
   children,
+  className,
   ...props
 }: AccordionProps) {
   return (
     <Root type="single" collapsible {...props}>
-      <AccordionItem value={value}>
+      <AccordionItem className={className} value={value}>
         <Trigger>{trigger}</Trigger>
         <Content>{children}</Content>
       </AccordionItem>

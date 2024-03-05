@@ -13,8 +13,8 @@ export const generatePallet = ({
   secondary,
 }: GeneratePalletArgs): ColorsPalletType => {
   return {
-    primary: colors[primary || "green"],
-    secondary: colors[secondary || "green"],
+    primary: colors[primary || "paleGreen"],
+    secondary: colors[secondary || "marron"],
     text: {
       heading: colors.dark[900],
       body: colors.dark[700],

@@ -4,6 +4,11 @@ import { en as aboutEn } from "@modules/about/locales";
 
 i18n.addResourceBundle("en", "app", {
   welcome: "welcome",
+  unifiedDocumentManagement: "unified document management",
+  socialDocuments: "social document",
+  fieldsDefinition: "fields definition",
+  documentsCopies: "documents copies",
+  documentCondition: "document condition",
   ...homeEn,
   ...aboutEn,
 });

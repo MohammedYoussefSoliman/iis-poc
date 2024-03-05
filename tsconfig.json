@@ -41,6 +41,7 @@
       "@hooks": ["./src/hooks"],
       "@styles/*": ["./src/styles/*"],
       "@styles": ["./src/styles"],
+      "@utils/*": ["./src/utils/*"],
       "@layouts": ["./src/layouts"],
       "@components": ["./src/components"]
     }

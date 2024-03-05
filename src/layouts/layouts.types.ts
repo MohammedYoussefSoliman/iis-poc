@@ -1,23 +1,21 @@
 import React from "react";
+import { IconName } from "@components";
 
 export type LayoutProps = {
   children: React.ReactNode;
 };
 
 export type MenuItem = {
-  type: "item";
   path: string;
   label: string;
-  icon?: (active: boolean) => React.ReactNode;
 };
 
 export type SideMenu = {
-  type: "menu";
   label: string;
-  icon?: React.ReactNode;
+  icon: IconName;
   items: MenuItem[];
 };
 
 export type SideNavProps = {
-  navItems: (SideMenu | MenuItem)[];
+  navItems: SideMenu[];
 };

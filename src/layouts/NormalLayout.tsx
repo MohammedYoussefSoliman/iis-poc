@@ -4,7 +4,9 @@ import { Flex } from "@components";
 
 import Header from "./header";
 
-import { Wrapper, Aside } from "./layouts.styles";
+import { Wrapper } from "./layouts.styles";
+
+import Aside from "./Aside";
 
 export default function NormalLayout() {
   return (
@@ -12,9 +14,28 @@ export default function NormalLayout() {
       <main>
         <Header />
         <Flex fullWidth flex={1}>
-          <Aside direction="column" pv={32} ph={16} fullHeight>
-            aside
-          </Aside>
+          <Aside
+            navItems={[
+              {
+                label: "unifiedDocumentManagement",
+                icon: "file",
+                items: [
+                  {
+                    label: "fieldsDefinition",
+                    path: "/",
+                  },
+                  {
+                    label: "documentsCopies",
+                    path: "/about",
+                  },
+                  {
+                    label: "documentCondition",
+                    path: "/document-condition",
+                  },
+                ],
+              },
+            ]}
+          />
           <Outlet />
         </Flex>
       </main>

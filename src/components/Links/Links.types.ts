@@ -1,35 +1,19 @@
-import { Property } from "csstype";
 import React from "react";
 
 export type LinkTypeProps = {
   to: string;
   children: React.ReactNode;
   className?: string;
-  color?: Property.Color;
+  color?: string;
   callback?: () => void;
   relative?: boolean;
-};
-export type ButtonTypeProps = {
-  children: React.ReactNode;
-  className?: string;
-  color?: Property.Color;
-  onClick: () => void;
-  disabled?: boolean;
-};
-
-export type GoBackProps = {
-  callback?: () => void;
 };
 
 export type NavLinkTypeProps = {
   to: string;
-  children: string;
+  label: string;
   className?: string;
   relative?: boolean;
   hash?: string;
   callback?: () => void;
-};
-
-export type DirectLinkTypeProps = {
-  className?: string;
 };

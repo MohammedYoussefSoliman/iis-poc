@@ -72,6 +72,19 @@ export const green = {
   900: "#134C42",
 };
 
+export const paleGreen = {
+  50: "#E9EBF8",
+  100: "#B3EAE8",
+  200: "#8EDFDD",
+  300: "#5AD1CD",
+  400: "#3AC8C4",
+  500: "#09BAB5",
+  600: "#08A9A5",
+  700: "#068481",
+  800: "#056664",
+  900: "#044E4C",
+};
+
 export const error = {
   100: "#ffeded",
   200: "#fadadb",

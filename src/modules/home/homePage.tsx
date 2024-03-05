@@ -16,16 +16,16 @@ export default function HomePage() {
             p="10px"
           >
             This is trigger
-            <Icon name="chevron-up" className="AccordionChevron" />
+            <Icon name="chevron-down" className="AccordionChevron" />
           </AccordionTrigger>
         }
       >
-        <AccordionContent direction="column" fullWidth>
-          <Flex>This is content 1</Flex>
-          <Flex>This is content 1</Flex>
-          <Flex>This is content 1</Flex>
-          <Flex>This is content 1</Flex>
-          <Flex>This is content 1</Flex>
+        <AccordionContent gap={8} direction="column" fullWidth>
+          <Flex p={8}>This is content 1</Flex>
+          <Flex p={8}>This is content 1</Flex>
+          <Flex p={8}>This is content 1</Flex>
+          <Flex p={8}>This is content 1</Flex>
+          <Flex p={8}>This is content 1</Flex>
         </AccordionContent>
       </Accordion>
     </Flex>
